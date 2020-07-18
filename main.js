@@ -29,11 +29,14 @@ console.log(
   (pSumRound = Math.round(pSum / 100) * 100)
 );
 
-if (pSumMin % 2 === 0) {
-  console.log(`Parne chyslo`);
-} else {
-  console.log("Neparne chyslo");
-}
+// if (pSumMin % 2 === 0) {
+//   console.log(`Parne chyslo`);
+// } else {
+//   console.log("Neparne chyslo");
+// }
+
+const isEven = pSumMin % 2 === 0;
+console.log(isEven);
 
 console.log(`Change from 500grn if to buy all goods`, (change = 500 - pSum));
 
